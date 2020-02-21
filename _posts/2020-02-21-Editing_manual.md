@@ -1,6 +1,8 @@
 ##编辑办法
 
-1. TOC
+![Image description](images/mmqrcode1582249479975.png
+
+TOC
 {:toc}
 
 * index.md 

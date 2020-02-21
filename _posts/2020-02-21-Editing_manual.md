@@ -1,6 +1,6 @@
 ##编辑办法
 
-![Image description](images/mmqrcode1582249479975.png
+![Image description](images/mmqrcode1582249479975.jpg
 
 TOC
 {:toc}

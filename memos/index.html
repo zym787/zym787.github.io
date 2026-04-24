@@ -149,6 +149,18 @@ var _hmt = _hmt || [];
       <div class="memo-item__marker"></div>
       <div class="memo-item__card">
         <div class="memo-item__content article-content">
+          <p>想爬雪山<br />
+献给我热烈的27岁</p>
+
+        </div>
+        <time class="memo-item__date meta-text"></time>
+      </div>
+    </div>
+    
+    <div class="memo-item">
+      <div class="memo-item__marker"></div>
+      <div class="memo-item__card">
+        <div class="memo-item__content article-content">
           <p>我以为剪了头发<br />
 就可以了无牵挂</p>
 
@@ -292,18 +304,25 @@ var _hmt = _hmt || [];
     
     <div class="footer-custom">
       <p id="hitokoto">
-  <a href="#" id="hitokoto_text">:D 获取中...</a>
+	<a href="#" id="hitokoto_text">
+		:D 获取中...
+	</a>
 </p>
 <script>
-  fetch("https://v1.hitokoto.cn")
-    .then((response) => response.json())
-    .then((data) => {
-      const hitokoto = document.querySelector("#hitokoto_text");
-      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`;
-      hitokoto.innerText = data.hitokoto;
-    })
-    .catch(console.error);
+	fetch("https://v1.hitokoto.cn").then((response) = >response.json()).then((data) = >{
+		const hitokoto = document.querySelector("#hitokoto_text");
+		hitokoto.href = `https: //hitokoto.cn/?uuid=${data.uuid}`;
+		hitokoto.innerText = data.hitokoto;
+	}).
+	catch(console.error);
 </script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+	👁
+	<span id="busuanzi_value_site_pv">
+	</span>
+</span>
     </div>
     
 

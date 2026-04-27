@@ -263,25 +263,21 @@ var _hmt = _hmt || [];
     
     <div class="footer-custom">
       <p id="hitokoto">
-	<a href="#" id="hitokoto_text">
-		:D 获取中...
-	</a>
+  <a href="#" id="hitokoto_text">:D 获取中...</a>
 </p>
 <script>
-	fetch("https://v1.hitokoto.cn").then((response) = >response.json()).then((data) = >{
-		const hitokoto = document.querySelector("#hitokoto_text");
-		hitokoto.href = `https: //hitokoto.cn/?uuid=${data.uuid}`;
-		hitokoto.innerText = data.hitokoto;
-	}).
-	catch(console.error);
+  fetch("https://v1.hitokoto.cn")
+    .then((response) => response.json())
+    .then((data) => {
+      const hitokoto = document.querySelector("#hitokoto_text");
+      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`;
+      hitokoto.innerText = data.hitokoto;
+    })
+    .catch(console.error);
 </script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-<span id="busuanzi_container_site_pv">
-	👁
-	<span id="busuanzi_value_site_pv">
-	</span>
-</span>
+<script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_value_site_pv"></span> 👁
+<span id="busuanzi_value_site_uv"></span> 👤
     </div>
     
 
